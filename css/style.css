@@ -45,7 +45,8 @@ body {
 .selection li{
     border-top:solid transparent;
     margin-left: 50px;
-    font-size: small;
+    font-size: 16px;
+    font-weight: 400;
     padding-top: 10px;
     margin-bottom: 10px;
     
@@ -54,7 +55,8 @@ body {
 .selection li:hover{
     color:#0065FC ;
     margin-left: 50px;
-    font-size: small;
+    font-size: 16px;
+    font-weight: 400;
     border-top:solid #0065FC ;
     padding-top: 10px;
     margin-bottom: 10px;
@@ -85,7 +87,7 @@ body {
     margin-top: 35px;
    
 }
-.location{
+.form-location{
     display: flex;
     align-items: center;
     background-color: #DEEBFF;
@@ -95,7 +97,7 @@ body {
     width: 49px ;
     justify-content: center;
 }
-.location i{
+.form-location i{
     color: black;
 }
 
@@ -421,17 +423,18 @@ a {
     display: flex;
     background-color:#F2F2F2 ;
     margin-top: 80px;
+    padding:12px;
 }
 .information-footer{
     display: flex;
     flex-direction: column;
     margin-right: auto;
     padding: 16px;
-    margin-top: -13px;
+    margin-top: -12px;
 }
 .information-title{
     display: flex;
-    margin-bottom: -24px;
+    margin-bottom: -9px;
 }
 .footer ul{
     display: flex;
@@ -440,7 +443,7 @@ a {
     padding: 0;
 }
 .footer li{
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 500;
 }
 
@@ -457,6 +460,23 @@ a {
     .selection{
         margin-left: 32px;
     }
+    .form-container{
+        margin-bottom: 40px;
+    }
+    .filter{
+        display: block;
+    }
+    
+    }
+    .filter ul{
+        padding: 10px;
+    }
+    .filter li{
+        margin-right: -8px;
+    }
+    .filter p{
+        margin-bottom: -10px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -464,11 +484,25 @@ a {
     .hebergements {
         width: 100%;
     }
+    .hebergements-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    .hebergements-cards .card{
+        display: flex;
+
+    }
+    
     .herbergements-title{
         padding-left: inherit;
+        margin-left: 29px;
     }
-    .hebergements p{
-        padding-left: inherit;
+    .hebergements-plus{
+        margin-left: 24px;
     }
 
     .populaires {
@@ -503,13 +537,88 @@ a {
     .footer{
         margin-top: 48px;
     }
-}
+
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    
-}
+@media (max-width: 767.95px) {
+    .header{
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .logo{
+        padding: 30px;
+    }
+    .selection{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .selection ul{
+        display: flex;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    padding: 0;
 
+    }
+    .selection  li {
+        border-top: solid transparent;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+        
+        height: 40px;
+        width: 50%;
+        text-align: center;
+    }
+    .selection li:hover {
+        border-top: solid transparent;
+        color: #0065FC;
+        border-bottom: solid #0065FC;
+       
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        width: 50%;
+        text-align: center;
+    }
+    /***************************** section formulaire *******************/
+    .form{
+        margin: 0;
+    }
+    .filter{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+    }
+    .filter ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+
+    
+    
+
+
+/*
 @media  (max-width: 375.98px) {
     body{
         display: flex;
@@ -617,5 +726,5 @@ a {
         flex-direction: column;
     }
 
-}
+}*/
     
