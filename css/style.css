@@ -183,7 +183,7 @@ body {
     justify-content: center;
     font-size: 10px;
     border-radius: 50%;
-    border: 1px solid #deebff;
+    border: 1px solid #d9d9d9;
     height: 20px;
     width: 20px;
     margin-right: 10px;
@@ -487,9 +487,7 @@ a {
         grid-template-rows: repeat(2, 1fr);
         gap: 30px;
     }
-    .hebergements-cards .card-title{
-        font-size: 14px;
-    }
+    
     .hebergements-plus{
         margin-left: 0;
     }
@@ -529,6 +527,9 @@ a {
         padding: 0;
         flex-direction: column;
     }
+    .activity-cards .card-content{
+        padding-right: 15px;
+    }
     .footer {
         display: flex;
         background-color: #F2F2F2;
@@ -553,6 +554,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
     }
     .logo{
         padding: 30px;
@@ -581,10 +583,10 @@ a {
         font-size: 16px;
         font-weight: 400;
         padding: 0;
-        
         height: 40px;
         width: 50%;
         text-align: center;
+        border-bottom: solid #f2f2f2;
     }
     .selection li:hover {
         border-top: solid transparent;
@@ -600,9 +602,11 @@ a {
         text-align: center;
     }
     /***************************** section formulaire *******************/
+
+    
     .form{
        
-        padding: 0 20px 0 20px;
+        padding: 20px;
     }
     .form h1{
         font-size: 21px;
@@ -629,6 +633,8 @@ a {
         width: 49px;
         border-radius: 15px;
         border: none;
+        box-shadow: 0px 4px 4px 0px #00000040;
+
     }
     .btn-search i{
         color:#ffffFF;
@@ -679,26 +685,47 @@ a {
     height: 40px;
     margin-bottom: 20px;
     font-size: 13px;
-    justify-content: flex-start    
+    justify-content: center   
     }
     .information p{
     font-size: 13px;
     }
+    .hebergements-and-populaires .hebergements{
+        background: 0;
+    }
     .hebergements-and-populaires{
     display: flex;
     flex-direction: column-reverse;
+    gap: 0;
+    }
+    .hebergements{
+        margin-top: 0;
     }
     .hebergements-cards{
     display: flex;
     flex-direction: column;
     }
+    .hebergements-plus p{
+        margin-top: 20px;
+
+    }
+    .hebergements-and-populaires .populaires{
+        border-radius: 0px;
+    }
     .populaires-cards{
     display: flex;
     flex-direction: column;
     }
+    .activity-title{
+        margin-bottom: 33px;
+    }
+    .activity-cards .card{
+        margin: 0;
+    }
     .activity-cards{
     display: flex;
     flex-direction: column;
+    gap: 15px;
     }
     .footer {
     display: flex;
